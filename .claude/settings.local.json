@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cd frontend:*)",
+      "Bash(npm install:*)",
+      "Bash(cd /c/Users/ivate/arauca-opina/frontend && npx vite build 2>&1 | tail -15)",
+      "Bash(npx vite:*)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"const r = require\\('C:/Users/ivate/arauca-opina/frontend/node_modules/recharts'\\); console.log\\(Object.keys\\(r\\).filter\\(k => ['BarChart','Bar','PieChart','Pie','Cell','XAxis','YAxis','Tooltip','ResponsiveContainer','CartesianGrid','Legend'].includes\\(k\\)\\).join\\(', '\\)\\)\")"
+    ]
+  }
+}

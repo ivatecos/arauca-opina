@@ -1,0 +1,12 @@
+{
+  "name": "arauca-opina",
+  "version": "1.0.0",
+  "description": "Plataforma de participación ciudadana - Gobernación de Arauca",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install"
+  }
+}
