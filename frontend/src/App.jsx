@@ -10,6 +10,7 @@ import LayoutAdmin from '@/layouts/LayoutAdmin'
 import Inicio from '@/paginas/Inicio'
 import Login from '@/paginas/auth/Login'
 import Registro from '@/paginas/auth/Registro'
+import ResetPassword from '@/paginas/auth/ResetPassword'
 import ListaEncuestas from '@/paginas/encuestas/ListaEncuestas'
 import EncuestaDetalle from '@/paginas/encuestas/EncuestaDetalle'
 import ListaProyectos from '@/paginas/proyectos/ListaProyectos'
@@ -60,6 +61,7 @@ export default function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/encuestas" element={<ListaEncuestas />} />
             <Route path="/encuestas/:id" element={<EncuestaDetalle />} />
             <Route path="/proyectos" element={<ListaProyectos />} />
