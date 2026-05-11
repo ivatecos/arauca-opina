@@ -54,8 +54,10 @@ export default function Login() {
       if (authError) {
         if (authError.message === 'Invalid login credentials') {
           setError('Correo o contraseña incorrectos. Intenta de nuevo.')
+        } else if (authError.message.toLowerCase().includes('confirm')) {
+          setError('Debes confirmar tu correo electrónico antes de ingresar.')
         } else {
-          setError('Error al iniciar sesión. Por favor intenta más tarde.')
+          setError(`Error: ${authError.message}`)
         }
         return
       }
